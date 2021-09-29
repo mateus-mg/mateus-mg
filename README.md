@@ -23,4 +23,4 @@
 
 <br />
 
- <font size="1">Apaixonado por dados e em ajudar as pessoas a tomarem decisões melhores através da análise de dados ...</font>
+ #### Apaixonado por dados e em ajudar as pessoas a tomarem decisões melhores através da análise de dados ...
