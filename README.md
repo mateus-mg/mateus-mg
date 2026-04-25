@@ -1,8 +1,10 @@
-<h1 align="center">
+<h1 align="center">Hi there, I'm Mateus Marques 👋</h1>
+
+<p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Olá!+Eu+sou+o+Mateus+Marques+👋;Python+Developer+|+Data+Enthusiast+|+AI+Explorer&center=true&size=30">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Python+Developer;Data+%26+AI+Enthusiast;Backend+Engineer&center=true&size=30">
   </a>
-</h1>
+</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/mateus-marques-galv%C3%A3o-759b3a3a/">
@@ -11,7 +13,7 @@
   <a href="https://www.instagram.com/mateus__mg_/">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
   </a>
-  <a href="https://api.whatsapp.com/send?phone=5562992723951&text=Olá%20Mateus">
+  <a href="https://api.whatsapp.com/send?phone=5562992723951&text=Ol%C3%A1%20Mateus">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
   </a>
   <a href="mailto:mateusmarques2011@live.com">
@@ -21,21 +23,21 @@
 
 ---
 
-## 🚀 Sobre Mim
+## 🚀 About Me
 
 <p align="center">
-  Sou um <strong>Desenvolvedor Python</strong> apaixonado por tecnologia, com foco em <strong>backend, dados e inteligência artificial</strong>.
+  I'm a <strong>Python Developer</strong> passionate about technology, focused on <strong>backend, data, and artificial intelligence</strong>.
 </p>
 
-- 💻 Desenvolvedor Python com experiência em construção de APIs, automações e soluções inteligentes.
-- 🎯 Foco em backend, dados e IA, sempre buscando aplicar as melhores práticas de desenvolvimento.
-- 📚 Atualmente cursando o <strong>Pacote Python Master da PycodeBR</strong>, aprofundando minhas habilidades em Python, Django, integrações e IA.
-- 🛠️ Tecnologias que utilizo no dia a dia: <strong>Django, Django REST Framework (DRF), LangChain, RAG, Docker e AWS</strong>.
-- 🤝 Aberto a colaborações, contribuições open source e novas oportunidades de aprendizado e crescimento profissional.
+- 💻 Python Developer with experience building APIs, automations, and intelligent solutions.
+- 🎯 Focused on backend, data, and AI, always seeking to apply best development practices.
+- 📚 Currently studying the <strong>PycodeBR Python Master Package</strong>, deepening my skills in Python, Django, integrations, and AI.
+- 🛠️ Technologies I use daily: <strong>Django, Django REST Framework (DRF), LangChain, RAG, Docker, and AWS</strong>.
+- 🤝 Open to collaborations, open source contributions, and new opportunities for learning and professional growth.
 
 ---
 
-## 🛠️ Stack Tecnológica
+## 🛠️ Tech Stack
 
 ### Backend & Frameworks
 <p align="center">
@@ -45,13 +47,13 @@
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white">
 </p>
 
-### Banco de Dados
+### Databases
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
   <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white">
 </p>
 
-### Inteligência Artificial & Dados
+### AI & Data
 <p align="center">
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white">
@@ -59,7 +61,7 @@
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
 </p>
 
-### DevOps & Ferramentas
+### DevOps & Tools
 <p align="center">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
@@ -69,41 +71,41 @@
 
 ---
 
-## 📂 Projetos em Destaque
+## 📂 Featured Projects
 
 <table>
   <tr>
     <td>
-      <h3>🚗 Sistema de Gestão de Carros</h3>
-      <p>Sistema web para revenda de veículos com autenticação de usuários e integração com IA.</p>
+      <h3>🚗 Car Dealership Management System</h3>
+      <p>Web system for vehicle resale with user authentication and AI integration.</p>
       <p><strong>Tech Stack:</strong> Django, PostgreSQL, AWS, OpenAI API, Bootstrap</p>
     </td>
   </tr>
   <tr>
     <td>
       <h3>🎬 Flix API</h3>
-      <p>API REST completa para gerenciamento de filmes, atores e gêneros.</p>
+      <p>Complete REST API for managing movies, actors, and genres.</p>
       <p><strong>Tech Stack:</strong> Django REST Framework, JWT, PythonAnywhere</p>
     </td>
   </tr>
   <tr>
     <td>
-      <h3>📦 Sistema de Gestão de Estoque (SGE)</h3>
-      <p>Sistema full stack com dashboard, métricas e inventário automático.</p>
+      <h3>📦 Inventory Management System (SGE)</h3>
+      <p>Full stack system with dashboard, metrics, and automatic inventory.</p>
       <p><strong>Tech Stack:</strong> Django, Bootstrap, PostgreSQL, DRF, Docker</p>
     </td>
   </tr>
   <tr>
     <td>
-      <h3>🤖 ChatBot com IA para WhatsApp</h3>
-      <p>ChatBot white label com dados personalizados para atendimento automatizado.</p>
+      <h3>🤖 AI ChatBot for WhatsApp</h3>
+      <p>White label ChatBot with custom data for automated customer service.</p>
       <p><strong>Tech Stack:</strong> Python, LangChain, FastAPI, EvolutionAPI, RAG</p>
     </td>
   </tr>
   <tr>
     <td>
-      <h3>🧠 Agente de IA com Banco de Dados</h3>
-      <p>Agente inteligente com capacidade de consulta e interação com bancos de dados SQL.</p>
+      <h3>🧠 AI Agent with Database</h3>
+      <p>Intelligent agent capable of querying and interacting with SQL databases.</p>
       <p><strong>Tech Stack:</strong> Python, LangChain, Streamlit, SQL, OpenAI, Ollama</p>
     </td>
   </tr>
@@ -111,7 +113,7 @@
 
 ---
 
-## 📊 Estatísticas do GitHub
+## 📊 GitHub Stats
 
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=mateus-mg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
@@ -124,26 +126,26 @@
 
 ---
 
-## 🎓 Formação Contínua
+## 🎓 Continuous Learning
 
 <p align="center">
-  Atualmente estou me especializando através do <strong><a href="https://pycodebr.com.br/">Pacote Python Master da PycodeBR</a></strong>.
+  I'm currently specializing through the <strong><a href="https://pycodebr.com.br/">PycodeBR Python Master Package</a></strong>.
 </p>
 
-- 📚 Mais de **450 aulas**
-- ⏱️ Mais de **100 horas** de conteúdo
-- 🏆 Formação dividida em 4 masters:
+- 📚 Over **450 lessons**
+- ⏱️ Over **100 hours** of content
+- 🏆 Training divided into 4 masters:
   - **Logic Master**
   - **Django Master**
   - **Integration Master**
-  - **IA Master**
+  - **AI Master**
 
 ---
 
-## 📫 Vamos nos Conectar!
+## 📫 Let's Connect!
 
 <p align="center">
-  Estou sempre aberto a trocar ideias, colaborar em projetos e explorar novas oportunidades. Sinta-se à vontade para entrar em contato!
+  I'm always open to exchanging ideas, collaborating on projects, and exploring new opportunities. Feel free to reach out!
 </p>
 
 <p align="center">
