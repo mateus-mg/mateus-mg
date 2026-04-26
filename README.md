@@ -1,6 +1,12 @@
 <h1 align="center">Hi there, I'm Mateus Marques 👋</h1>
 
 <p align="center">
+  <a href="https://mateus-mg.github.io">
+    <img src="https://img.shields.io/badge/Portfolio-2563eb?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio">
+  </a>
+</p>
+
+<p align="center">
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com/?lines=Python+Developer;Data+%26+AI+Enthusiast;Backend+Engineer&center=true&size=30">
   </a>
