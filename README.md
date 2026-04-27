@@ -1,7 +1,7 @@
 <h1 align="center">Hi there, I'm Mateus Marques 👋</h1>
 
 <p align="center">
-  <a href="https://mateus-mg.github.io/mateus-mg/">
+  <a href="https://mateus-mg.github.io/">
     <img src="https://img.shields.io/badge/Portfolio-2563eb?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio">
   </a>
 </p>
