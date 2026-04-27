@@ -1,7 +1,7 @@
 <h1 align="center">Hi there, I'm Mateus Marques 👋</h1>
 
 <p align="center">
-  <a href="https://mateus-mg.github.io">
+  <a href="https://mateus-mg.github.io/mateus-mg/">
     <img src="https://img.shields.io/badge/Portfolio-2563eb?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio">
   </a>
 </p>
@@ -37,7 +37,11 @@
 
 - 💻 Python Developer with experience building APIs, automations, and intelligent solutions.
 - 🎯 Focused on backend, data, and AI, always seeking to apply best development practices.
-- 📚 Currently studying the <strong>PycodeBR Python Master Package</strong>, deepening my skills in Python, Django, integrations, and AI.
+- 📚 Currently studying at <strong>PycodeBR</strong>:
+  - ✅ Completed: <strong>Programming Logic</strong>
+  - ⏳ In Progress: <strong>Django Master</strong>
+  - 🔒 Pending: <strong>Integration Master</strong>
+  - 🔒 Pending: <strong>AI Master</strong>
 - 🛠️ Technologies I use daily: <strong>Django, Django REST Framework (DRF), LangChain, RAG, Docker, and AWS</strong>.
 - 🤝 Open to collaborations, open source contributions, and new opportunities for learning and professional growth.
 
@@ -135,16 +139,16 @@
 ## 🎓 Continuous Learning
 
 <p align="center">
-  I'm currently specializing through the <strong><a href="https://pycodebr.com.br/">PycodeBR Python Master Package</a></strong>.
+  I'm currently specializing through courses at <strong><a href="https://pycodebr.com.br/">PycodeBR</a></strong>.
 </p>
 
-- 📚 Over **450 lessons**
+- 📚 Over **450 lessons** across all courses
 - ⏱️ Over **100 hours** of content
-- 🏆 Training divided into 4 masters:
-  - **Logic Master**
-  - **Django Master**
-  - **Integration Master**
-  - **AI Master**
+- 🏆 Courses:
+  - **Programming Logic** — Fundamentals of programming with Python ✅
+  - **Django Master** — Full web development with Django, DRF, and deployment ⏳
+  - **Integration Master** — APIs, webhooks, and third-party integrations 🔒
+  - **AI Master** — LLMs, LangChain, RAG, and intelligent agents 🔒
 
 ---
 
