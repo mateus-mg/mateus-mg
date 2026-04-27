@@ -7,8 +7,14 @@ on:
     - cron: '0 0 * * *'  # Daily at 00:00 UTC
   workflow_dispatch:
 
+# NOTE: Using PAT (Personal Access Token) instead of GITHUB_TOKEN
+# so commits appear under your real account, not github-actions[bot].
+# Create a PAT at: Settings > Developer settings > Personal access tokens > Fine-grained tokens
+# Required scopes: Contents (read+write) for this repository.
+# Add it as a repository secret named PAT.
+
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   update-repos:
@@ -18,7 +24,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -27,17 +33,19 @@ jobs:
 
       - name: Fetch repositories
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
         run: python scripts/fetch_repos.py
 
       - name: Commit and push if changed
+        env:
+          PAT: ${{ secrets.PAT }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Mateus Marques"
+          git config user.email "mateusmarques2011@live.com"
           git add data/repos.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: auto-update repo data [skip ci]"
-            git push
+            git commit -m "chore: auto-update repo data"
+            git push https://x-access-token:${PAT}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
           fi
