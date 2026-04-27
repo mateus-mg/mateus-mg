@@ -41,6 +41,10 @@ jobs:
         env:
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
+          # Remove checkout's default auth so DEPLOY_TOKEN is used
+          git config --local --unset-all http.https://github.com/.extraheader || true
+          git remote set-url origin https://x-access-token:${DEPLOY_TOKEN}@github.com/${{ github.repository }}.git
+          
           git config user.name "Mateus Marques"
           git config user.email "mateusmarques2011@live.com"
           git add data/repos.json
@@ -48,5 +52,5 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore: auto-update repo data"
-            git push https://x-access-token:${DEPLOY_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
+            git push origin HEAD:${{ github.ref_name }}
           fi
