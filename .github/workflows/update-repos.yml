@@ -7,9 +7,8 @@ on:
     - cron: '0 0 * * *'  # Daily at 00:00 UTC
   workflow_dispatch:
 
-# NOTE: Using a Personal Access Token (PAT) only for the git push step
+# NOTE: Using a Personal Access Token (PAT) instead of GITHUB_TOKEN
 # so commits appear under your real account, not github-actions[bot].
-# The default GITHUB_TOKEN is used for checkout and API calls.
 # Create a PAT at: Settings > Developer settings > Personal access tokens
 # Required scopes: repo (or public_repo) for classic tokens,
 # or Contents (read+write) for fine-grained tokens.
@@ -25,7 +24,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-        # Uses default GITHUB_TOKEN for read access
+        with:
+          persist-credentials: false  # Don't cache GITHUB_TOKEN
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -41,12 +41,9 @@ jobs:
         env:
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
-          # Remove checkout's default auth so DEPLOY_TOKEN is used
-          git config --local --unset-all http.https://github.com/.extraheader || true
-          git remote set-url origin https://x-access-token:${DEPLOY_TOKEN}@github.com/${{ github.repository }}.git
-          
           git config user.name "Mateus Marques"
           git config user.email "mateusmarques2011@live.com"
+          git remote set-url origin https://x-access-token:${DEPLOY_TOKEN}@github.com/${{ github.repository }}.git
           git add data/repos.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
