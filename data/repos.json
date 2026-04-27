@@ -1,5 +1,14 @@
 [
   {
+    "name": "mateus-mg",
+    "description": "No description available.",
+    "html_url": "https://github.com/mateus-mg/mateus-mg",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "topics": [],
+    "updated_at": "2026-04-27T21:34:22Z"
+  },
+  {
     "name": "media-organizer",
     "description": "Python tool that automatically organizes music, books and comics into structured libraries using hardlinks. Features metadata enrichment, genre validation, Navidrome sync and conflict resolution.",
     "html_url": "https://github.com/mateus-mg/media-organizer",
@@ -7,15 +16,6 @@
     "stargazers_count": 0,
     "topics": [],
     "updated_at": "2026-04-25T23:23:23Z"
-  },
-  {
-    "name": "mateus-mg",
-    "description": "No description available.",
-    "html_url": "https://github.com/mateus-mg/mateus-mg",
-    "language": null,
-    "stargazers_count": 0,
-    "topics": [],
-    "updated_at": "2026-04-25T18:34:31Z"
   },
   {
     "name": "media-converter",
