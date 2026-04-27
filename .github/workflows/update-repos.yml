@@ -7,10 +7,12 @@ on:
     - cron: '0 0 * * *'  # Daily at 00:00 UTC
   workflow_dispatch:
 
-# NOTE: Using a Personal Access Token (PAT) instead of GITHUB_TOKEN
+# NOTE: Using a Personal Access Token (PAT) only for the git push step
 # so commits appear under your real account, not github-actions[bot].
-# Create a PAT at: Settings > Developer settings > Personal access tokens > Fine-grained tokens
-# Required scopes: Contents (read+write) for this repository.
+# The default GITHUB_TOKEN is used for checkout and API calls.
+# Create a PAT at: Settings > Developer settings > Personal access tokens
+# Required scopes: repo (or public_repo) for classic tokens,
+# or Contents (read+write) for fine-grained tokens.
 # Add it as a repository secret named DEPLOY_TOKEN.
 
 permissions:
@@ -23,8 +25,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-        with:
-          token: ${{ secrets.DEPLOY_TOKEN }}
+        # Uses default GITHUB_TOKEN for read access
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -33,7 +34,7 @@ jobs:
 
       - name: Fetch repositories
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch_repos.py
 
       - name: Commit and push if changed
