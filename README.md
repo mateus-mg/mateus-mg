@@ -131,7 +131,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mateus-mg&theme=tokyonight">
+  <img src="assets/github-streak.svg">
 </p>
 
 ---
