@@ -1,0 +1,44 @@
+name: Generate GitHub Stats Images
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Every Sunday at 00:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Create assets directory
+        run: mkdir -p assets
+        
+      - name: Generate GitHub Stats Card
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               "https://github-readme-stats.vercel.app/api?username=mateus-mg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" \
+               --output assets/github-stats.svg
+          
+      - name: Generate Top Languages Card
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               "https://github-readme-stats.vercel.app/api/top-langs/?username=mateus-mg&layout=compact&langs_count=7&theme=tokyonight&hide_border=true" \
+               --output assets/github-languages.svg
+          
+      - name: Commit and push images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update GitHub stats images [skip ci]"
+            git push
+          fi
