@@ -126,12 +126,12 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=mateus-mg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mateus-mg&layout=compact&langs_count=7&theme=tokyonight&hide_border=true" />
+  <img height="180em" src="assets/github-stats.svg" />
+  <img height="180em" src="assets/github-languages.svg" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mateus-mg&theme=tokyonight&hide_border=true">
+  <img src="assets/github-streak.svg">
 </p>
 
 ---
