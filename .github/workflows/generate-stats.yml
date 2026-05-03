@@ -21,21 +21,25 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Create assets directory
+        if: github.event_name != 'pull_request'
         run: mkdir -p assets
-        
+
       - name: Generate GitHub Stats Card
+        if: github.event_name != 'pull_request'
         run: |
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                "https://github-readme-stats.vercel.app/api?username=mateus-mg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" \
                --output assets/github-stats.svg
-          
+
       - name: Generate Top Languages Card
+        if: github.event_name != 'pull_request'
         run: |
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                "https://github-readme-stats.vercel.app/api/top-langs/?username=mateus-mg&layout=compact&langs_count=7&theme=tokyonight&hide_border=true" \
                --output assets/github-languages.svg
-          
+
       - name: Generate Streak Stats Card
+        if: github.event_name != 'pull_request'
         run: |
           curl "https://github-readme-streak-stats.herokuapp.com/?user=mateus-mg&theme=tokyonight&hide_border=true" \
                --output assets/github-streak.svg
