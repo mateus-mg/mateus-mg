@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195">
+  <rect width="495" height="195" fill="#1a1b27" rx="10"/>
+  <text x="247.5" y="97.5" font-family="Arial" font-size="20" fill="#38bdae" text-anchor="middle">GitHub Stats</text>
+  <text x="247.5" y="130" font-family="Arial" font-size="14" fill="#70a5fd" text-anchor="middle">Loading...</text>
+</svg>

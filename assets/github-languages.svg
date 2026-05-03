@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="165" viewBox="0 0 350 165">
+  <rect width="350" height="165" fill="#1a1b27" rx="10"/>
+  <text x="175" y="82.5" font-family="Arial" font-size="18" fill="#38bdae" text-anchor="middle">Top Languages</text>
+  <text x="175" y="110" font-family="Arial" font-size="12" fill="#70a5fd" text-anchor="middle">Loading...</text>
+</svg>
